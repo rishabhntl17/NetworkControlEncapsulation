@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkControlEncapsulation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPo-wj-fQQ">
+                                <rect key="frame" x="50" y="70" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="company" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xal-Si-xc7">
+                                <rect key="frame" x="50" y="230" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OfU-3k-bPF">
+                                <rect key="frame" x="50" y="310" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-dL-p0O">
+                                <rect key="frame" x="157" y="390" width="61" height="30"/>
+                                <state key="normal" title="Get Data"/>
+                                <connections>
+                                    <action selector="getButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fik-lh-uNV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiF-kG-Jf8">
+                                <rect key="frame" x="50" y="150" width="275" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kiF-kG-Jf8" firstAttribute="width" secondItem="iPo-wj-fQQ" secondAttribute="width" id="6MX-2v-C2i"/>
+                            <constraint firstItem="xal-Si-xc7" firstAttribute="top" secondItem="kiF-kG-Jf8" secondAttribute="bottom" constant="50" id="6N7-MQ-JW0"/>
+                            <constraint firstItem="OfU-3k-bPF" firstAttribute="top" secondItem="xal-Si-xc7" secondAttribute="bottom" constant="50" id="9kj-1l-j6H"/>
+                            <constraint firstItem="OfU-3k-bPF" firstAttribute="centerX" secondItem="xal-Si-xc7" secondAttribute="centerX" id="CgV-RE-81C"/>
+                            <constraint firstItem="kiF-kG-Jf8" firstAttribute="centerX" secondItem="iPo-wj-fQQ" secondAttribute="centerX" id="JUs-fw-tbX"/>
+                            <constraint firstItem="iPo-wj-fQQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="LwR-7a-PYb"/>
+                            <constraint firstItem="yiw-dL-p0O" firstAttribute="top" secondItem="OfU-3k-bPF" secondAttribute="bottom" constant="50" id="Tmf-Wb-rwr"/>
+                            <constraint firstItem="kiF-kG-Jf8" firstAttribute="top" secondItem="iPo-wj-fQQ" secondAttribute="bottom" constant="50" id="Vkh-XU-nvU"/>
+                            <constraint firstItem="yiw-dL-p0O" firstAttribute="centerX" secondItem="OfU-3k-bPF" secondAttribute="centerX" id="Zaj-1Y-2QI"/>
+                            <constraint firstItem="iPo-wj-fQQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ffc-Z1-bsI"/>
+                            <constraint firstItem="xal-Si-xc7" firstAttribute="centerX" secondItem="kiF-kG-Jf8" secondAttribute="centerX" id="ilr-HZ-ixO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPo-wj-fQQ" secondAttribute="trailing" constant="50" id="ocJ-34-bh2"/>
+                            <constraint firstItem="xal-Si-xc7" firstAttribute="width" secondItem="kiF-kG-Jf8" secondAttribute="width" id="ohE-Ax-xlK"/>
+                            <constraint firstItem="OfU-3k-bPF" firstAttribute="width" secondItem="xal-Si-xc7" secondAttribute="width" id="v0v-Cy-XPD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyTextField" destination="xal-Si-xc7" id="Fd4-n2-OJa"/>
+                        <outlet property="idTextField" destination="kiF-kG-Jf8" id="4AO-DT-7Qw"/>
+                        <outlet property="locationTextField" destination="OfU-3k-bPF" id="Hab-7E-Y6f"/>
+                        <outlet property="nameTextField" destination="iPo-wj-fQQ" id="wbq-a8-cHV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
